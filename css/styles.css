@@ -1,0 +1,91 @@
+body{
+    max-width: 280px;
+    height: 100vh;
+    margin: auto;
+    outline: 2px solid black;
+    background-color: white;
+    position: relative;
+}
+
+.top{
+    background-color: blue;
+    height: 15vh;
+}
+
+.title{
+    color: white;
+    font-family: calibri;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding-inline-start: 10px;
+    padding-block-start: 10px;
+}
+
+.subtitle-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+h2,
+a{
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 1rem;
+    font-family: calibri;
+    text-align: center;
+}
+
+h2:first-of-type{
+    color: rgba(255, 255, 255, 0.75);
+}
+
+h2:last-of-type{
+    position: relative;
+    color: white;
+}
+
+h2:last-of-type::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -16px;
+    height: 2px;
+    background-color: white;
+}
+
+p{
+    text-align: center;
+    color: grey;
+    font-size: 1.25rem;
+    font-family: calibri;
+    font-weight: 500;
+    padding-block: 30px;
+}
+
+.button{
+    display: block;
+    width: 60%;
+    margin: auto auto 20px;
+    text-decoration: none;
+    background-color: grey;
+    text-align: center;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: calibri;
+    color: black;
+    border-radius: 2px;
+}
+
+.circle{
+    width: 50px;
+    aspect-ratio: 1;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
